@@ -21,6 +21,9 @@ public class Review {
     @Lob
     private String content;
 
+    // 리뷰 별점 (예: 4.5)
+    private Double star;
+
     private LocalDateTime createdAt = LocalDateTime.now();
 
     @ManyToOne(fetch = FetchType.LAZY)
